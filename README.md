@@ -1,7 +1,7 @@
 Exercise 4-7:
 <p align="center">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/policyIteration.png" width="350">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-9/changeInValueFunction.png" width="350">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/changeInValueFunction.png" width="350">
 </p>
 
 Exercise 4-9:
@@ -22,7 +22,7 @@ Exercise 4-9:
 
 <p align="center">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-9/127CapitalPh60PercentActionsWithGreatestAction.png" width="350">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-9/127CapitalPh60PercentValuesWithGreatestActions.png" width="350">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-9/127CapitalPh60PercentValuesWithGreatestAction.png" width="350">
 </p>
 
 
