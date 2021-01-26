@@ -1,6 +1,6 @@
 Exercise 4-7:
 <p align="center">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/policyIteration.png" width="350">
+    <img title="testTitle" src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/policyIteration.png" width="350">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/changeInValueFunction.png" width="350">
 </p>
 
