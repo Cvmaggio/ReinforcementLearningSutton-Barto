@@ -1,8 +1,23 @@
-Exercise 4-7:
-<p align="center">
-    <img title="testTitle" src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/policyIteration.png" width="350">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/changeInValueFunction.png" width="350">
-</p>
+<title>Exercise 4-7:</title>
+<div align="center">
+    <div width="350">
+        <h2>Policy Iteration</h2>
+        <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/policyIteration.png" width="350">
+    </div>
+    <div width="350">
+        <p>This is text that will describe the policy iteration</p>
+    </div>
+    <div width="350">
+        <h2>Change in Value Function</h2>
+        <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/changeInValueFunction.png" width="350">
+    </div>
+    <div width="350">
+        <p>This is text that will describe the change in the value function</p>
+    </div>
+</div>
+
+
+    
 
 Exercise 4-9:
 <p align="center">
