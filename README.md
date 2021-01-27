@@ -2,8 +2,8 @@
 <h2>Chapter 4:</h2>
 <h3>Exercise 4-7:</h3>
 <p align="center">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/policyIteration.png" width="350">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/changeInValueFunction.png" width="350">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/PolicyImprovement.png" width="350">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise4-7/PolicyEvaluation.png" width="350">
 </p>
 
 <h3>Exercise 4-9:</h3>
