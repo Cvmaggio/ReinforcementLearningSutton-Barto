@@ -55,6 +55,7 @@ def valueIteration():
     return actions        
 
 if __name__ == "__main__":
+    
     actions = valueIteration()
     print(actions)
     plt.figure()

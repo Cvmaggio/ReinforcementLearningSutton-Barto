@@ -132,23 +132,50 @@ if __name__ == '__main__':
         if policyStable:
             break
 
-    fig1, axes1 = plt.subplots(len(Pis))
+    fig1, axes1 = plt.subplots(len(Pis)//2+1,2)
+    fig1.suptitle("Policy Improvement")
+    for i in range(len(Pis)):
+        plotX = i // 2
+        plotY = i % 2 
+        im = axes1[plotX,plotY].imshow(Pis[i], origin='lower', interpolation='nearest')
+        fig1.colorbar(im, ax=axes1[plotX,plotY])        
+        axes1[plotX,plotY].set_xlabel('Location1 Cars')
+        axes1[plotX,plotY].set_ylabel('Location2 Cars')
+        axes1[plotX,plotY].set_title('pi(' + str(i) + ')')
+        
 
     #Source #1
     fig2, axes2 = plt.subplots(len(Vs)//2+1,2,subplot_kw={'projection':'3d'})
+    fig2.suptitle("Policy Evaluation")
     for i in range(len(Vs)):
         X = np.arange(0,maxCars+1)
-        Y = np.arange(0, maxCars+1)
+        Y = np.arange(0,maxCars+1)
         X,Y = np.meshgrid(X,Y)
         plotX = i //2
         plotY = i % 2
-        if (i == 0 or i == len(Vs)-1):
-            axes2[plotX,plotY].plot_surface(X,Y,Vs[i])
-        else:
+        if (i > 0):
             axes2[plotX,plotY].plot_surface(X,Y,np.subtract(Vs[i],Vs[i-1]),cmap='Reds')
+            axes2[plotX,plotY].set_xlabel('Location1 Cars')
+            axes2[plotX,plotY].set_ylabel('Location2 Cars')
+            axes2[plotX,plotY].set_zlabel('State Value Change')
+            axes2[plotX,plotY].set_title('V(pi(' +str(i) +')) - V(pi(' +str((i-1)) +'))')
+        if (i == 0):
+            axes2[plotX,plotY].plot_surface(X,Y,Vs[i])
+            axes2[plotX,plotY].set_xlabel('Location1 Cars')
+            axes2[plotX,plotY].set_ylabel('Location2 Cars') #, labelpad=10)
+            axes2[plotX,plotY].set_zlabel('Value')
+            axes2[plotX,plotY].set_title('V(pi(' +str(i) +'))')
+        if (i == len(Vs)-1):
+            #final is the next panel after the change graph for the final policy
+            final = i+1
+            plotX = final //2
+            plotY = final % 2
+            axes2[plotX,plotY].plot_surface(X,Y,Vs[i])
+            axes2[plotX,plotY].set_xlabel('Location1 Cars')
+            axes2[plotX,plotY].set_ylabel('Location2 Cars') #, labelpad=10)
+            axes2[plotX,plotY].set_zlabel('Value')
+            axes2[plotX,plotY].set_title('V(pi(' +str(final) +'))')
 
 
-    for i in range(len(Pis)):
-        axes1[i].imshow(Pis[i],cmap='hot', origin='lower', interpolation='nearest')
     
     plt.show()
