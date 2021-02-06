@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from copy import deepcopy
 
-
 maxCapital = 128
 theta = .00000000000001
 gamma = 1
@@ -31,10 +30,13 @@ def bellman(s,retType: bool):
     for a in range(largestAvailableBet[s]+1):
         probs = psrsa(pH,s,a)
         value = sum((probs[k]*(R[k]+gamma*V[k])) for k in probs)
+
         if value > maxValue+10e-16:
-        #if value >= maxValue:
             bestAction = a
             maxValue = value
+        # if value >= maxValue:
+        #     bestAction = a
+        #     maxValue = value
     if retType:
         return bestAction
     return maxValue
@@ -55,7 +57,6 @@ def valueIteration():
     return actions        
 
 if __name__ == "__main__":
-    
     actions = valueIteration()
     print(actions)
     plt.figure()
