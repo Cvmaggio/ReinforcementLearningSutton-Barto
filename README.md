@@ -29,8 +29,8 @@
 <h2>Chapter 5:</h2>
 <h3>Example 5-1:</h3>
 <p align="center">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example5-1/BlackjackOnPolicyStateValues10000Episodes.png" width="350">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example5-1/BlackjackOnPolicyStateValues500000Episodes.png" width="350">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example5-1/BlackjackOnPolicyStateValues10000Episodes.png" >
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example5-1/BlackjackOnPolicyStateValues500000Episodes.png" >
 </p>
 
 
