@@ -79,8 +79,7 @@ def playHand(PiPlayer,PiDealer,initialState):
 #   and 10 values that matter for the player 12 through 21
 #These two are dintinguished by whether the player hit 12 having a usable ace up their sleeve
 Q = np.random.rand(2,10,10,2)
-print(Q)
-Returns = []
+ReturnsCount = []
 for i in range(2):
     iRow = []
     for j in range(10):
@@ -88,10 +87,10 @@ for i in range(2):
         for k in range(10):
             kRow = []
             for l in range(2):
-                kRow.append([])
+                kRow.append(0)
             jRow.append(kRow)
         iRow.append(jRow)
-    Returns.append(iRow)
+    ReturnsCount.append(iRow)
 #           A 2 3 4 5 6 7 8 9 101112131415161718192021
 PiDealer = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0]
 PiPlayer = []
@@ -122,10 +121,10 @@ for i in range(EPISODES):
         G = GAMMA * G + 0
         #Even though this is first visit, we wont see states more than once per episode
         playerValue, dealerValue, action, usableAces = step[0], step[1], step[2], step[3]
-        Returns[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET][action] += [G]
-        curr = Returns[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET][action]
-        
-        Q[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET][action] = sum(curr)/len(curr)
+
+        ReturnsCount[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET][action] += 1
+        count = ReturnsCount[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET][action]
+        Q[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET][action] += (1/count) * (G - Q[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET][action])
         PiPlayer[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET] = np.argmax(Q[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET])
     # print(Returns[1][9][9])
     # print(PiPlayer)
