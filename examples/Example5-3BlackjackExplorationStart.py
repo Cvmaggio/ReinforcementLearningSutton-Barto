@@ -7,7 +7,7 @@ from matplotlib import cm
 
 
 
-EPISODES = 1000000
+EPISODES = 5000000
 GAMMA = 1
 PLAYEROFFSET = 12
 DEALEROFFSET = 2
@@ -126,14 +126,9 @@ for i in range(EPISODES):
         count = ReturnsCount[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET][action]
         Q[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET][action] += (1/count) * (G - Q[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET][action])
         PiPlayer[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET] = np.argmax(Q[usableAces][playerValue - PLAYEROFFSET][dealerValue - DEALEROFFSET])
-    # print(Returns[1][9][9])
-    # print(PiPlayer)
-    # print(PiPlayer[0][9][8])
-    # print()
-print(Q)
-print(PiPlayer)
 
 fig1, axes1 = plt.subplots(2)
+fig1.tight_layout()
 fig1.suptitle("Blackjack Exploration Start Pi")
 for i in range(2):
     im = axes1[i].imshow(PiPlayer[i], origin='lower',interpolation='nearest')
