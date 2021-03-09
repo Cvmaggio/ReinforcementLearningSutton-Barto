@@ -41,7 +41,9 @@
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example6-2/RandomWalkEstimatedValue.png">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example6-2/RandomWalkRMSE.png">
 </p>
-
-
+<h3>Example 6-6:</h3>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example6-6/CliffWalking.png">
+</p>
 
 
