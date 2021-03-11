@@ -45,5 +45,9 @@
 <p align="center">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example6-6/CliffWalking.png">
 </p>
+<h3>Example 6-7:</h3>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example6-7/MaximizationBiasPercentLeft.png">
+</p>
 
 
