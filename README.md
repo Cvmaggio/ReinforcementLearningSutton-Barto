@@ -36,10 +36,15 @@
 <p align="center">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example5-3\BlackjackExplorationStartPi5000000Episodes.png" >
 </p>
+<h2>Chapter 6:</h2>
 <h3>Example 6-2:</h3>
 <p align="center">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example6-2/RandomWalkEstimatedValue.png">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example6-2/RandomWalkRMSE.png">
+</p>
+<h3>Example 6-5:</h3>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example6-5/WindyGridworldAccumulatedTime.png">
 </p>
 <h3>Example 6-6:</h3>
 <p align="center">
@@ -49,5 +54,28 @@
 <p align="center">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example6-7/MaximizationBiasPercentLeft.png">
 </p>
+<h3>Exercise 6-5:</h3>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise6-5/RandomWalkRMSEInitials.png">
+</p>
+<h3>Exercise 6-9:</h3>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise6-9/WindyGridworldKingMovesAccumulatedTime.png">
+</p>
+<h3>Exercise 6-10:</h3>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise6-10/WindyGridworldKingMovesStochasticWindAccumulatedTime.png">
+</p>
 
 
+
+<h2>Chapter 7:</h2>
+<h3>Example 7-1:</h3>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example7-1/nstepTDMethodsontheRandomWalk.png">
+</p>
+<h3>Exercise 7-2:</h3>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise7-2/sumTDvsnStepPrediciton.png">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise7-2/sumTDvsnStepPredicitonDifference.png">
+</p>
