@@ -79,3 +79,9 @@
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise7-2/sumTDvsnStepPrediciton.png">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise7-2/sumTDvsnStepPredicitonDifference.png">
 </p>
+
+<h2>Chapter 8:</h2>
+<h3>Example 8-1:</h3>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/example8-1/DynaMaze.png">
+</p>
