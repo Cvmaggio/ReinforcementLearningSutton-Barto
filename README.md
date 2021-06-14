@@ -51,6 +51,24 @@ Note that some curves shoot up rapidly at higher step sizes. This is because pas
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/mountain_car/more_learning_curves.png">
 </p>
 
+<h2>Chapter 2:</h2>
+<h3>Exercise 2-5:</h3>
+<p>
+This exercise demonstrates the problem sample average step-size action-value methods have with tracking nonstationary problems. 
+This in contrast to how well a constant step-size performs. This is a useful insight as the former is guarenteed to converge, while the latter has no such guarentee. 
+This exercise is a ten arm bandit where all of the arms have mean values which take random walks between each step with a mean of 0 and a standard deviation of 0.01.
+</p>
+<h4>
+A note about the random walk
+</h4>
+<p>
+This is a graph I generated while coding the random walk for the arm means. If every arm started with a mean of 0 and took a random walk, the average mean value
+for each arm should converge back to 0 as the step count approached infinity. Over 10 runs, I tried checking this for epsilon = 0.1 and 0.2 and 
+</p>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise2-5/Percent_Optimal_Arm_Chosen_with_Arm_Random_Mean_walks_from_0.png">
+</p>
+
 <h2>Chapter 4:</h2>
 <h3>Exercise 4-7:</h3>
 <p align="center">
