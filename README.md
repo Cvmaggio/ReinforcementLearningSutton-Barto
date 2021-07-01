@@ -10,7 +10,7 @@ As the state space is massive. Tiling is used as a value function estimation
 </p>
 <h3>The Mountain</h3>
 <p align="center">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/mountain_car/mountain_curve.png">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/MountainCar/mountain_curve.png">
 </p>
 <h3>The Pull of Gravity</h3>
 <p>
@@ -20,7 +20,7 @@ The inverse is true for the negative side of the curve. The curve moves back up 
 as the slope of the mountain decreases near the top.
 </p>
 <p align="center">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/mountain_car/gravity_curve.png">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/MountainCar/gravity_curve.png">
 </p>
 <h3>Cost to Go</h3>
 <p>
@@ -29,8 +29,8 @@ As the episodes go on, more state have a chance to be explored and evaluated and
 Thus more states start to increase in value to their true "cost to go".
 </p>
 <p align="center">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/mountain_car/cost_to_go.png">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/mountain_car/cost_to_go_rotation.gif">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/MountainCar/cost_to_go.png">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/MountainCar/cost_to_go_rotation.gif">
 </p>
 <h3>Learning Curves</h3>
 <p>
@@ -40,7 +40,7 @@ The final red curve shows how these single step look ahead curves compare
 to averaging a states estimation based on the next 8 steps to follow.
 </p>
 <p align="center">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/mountain_car/learning_curves.png">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/MountainCar/learning_curves.png">
 </p>
 <h3>More Learning Curves</h3>
 <p>
@@ -48,25 +48,18 @@ These curves are similar to the last set, but here we are looking at lines which
 Note that some curves shoot up rapidly at higher step sizes. This is because past a certain point, these step sizes will not converge and need to be cut short.
 </p>
 <p align="center">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/mountain_car/more_learning_curves.png">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/MountainCar/more_learning_curves.png">
 </p>
 
-<h2>Chapter 2:</h2>
-<h3>Exercise 2-5:</h3>
-<p>
-This exercise demonstrates the problem sample average step-size action-value methods have with tracking nonstationary problems. 
-This in contrast to how well a constant step-size performs. This is a useful insight as the former is guarenteed to converge, while the latter has no such guarentee. 
-This exercise is a ten arm bandit where all of the arms have mean values which take random walks between each step with a mean of 0 and a standard deviation of 0.01.
-</p>
-<h4>
-A note about the random walk
-</h4>
-<p>
-This is a graph I generated while coding the random walk for the arm means. If every arm started with a mean of 0 and took a random walk, the average mean value
-for each arm should converge back to 0 as the step count approached infinity. Over 10 runs, I tried checking this for epsilon = 0.1 and 0.2 and 
+<h2>Multi Arm Bandit</h2>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/MultiArmBandit/Average_Reward_Random_Means_10_Arm_ε_Greedy_20000_Runs.png">
 </p>
 <p align="center">
-    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/exercise2-5/Percent_Optimal_Arm_Chosen_with_Arm_Random_Mean_walks_from_0.png">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/MultiArmBandit/Percent_Optimal_Random_Means_10_Arm_ε_Greedy_20000_Runs.png">
+</p>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/MultiArmBandit/Greedy_Optimistic_Start_vs_ε_Greedy_Exploration_Percent_Optimal_Random_Means_10_arm_10000_Runs.png">
 </p>
 
 <h2>Chapter 4:</h2>
