@@ -7,10 +7,10 @@ so we can find the optimal probability of going left or right in our short corri
 measure is the value of the first state under our theta parameterized policy.
 </p>
 <h3>REINFORCE</h3>
-<h2>Mountain Car</h2>
 <p align="center">
     <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/short_corridor/REINFORCE.png">
 </p>
+<h2>Mountain Car</h2>
 <p>
 The mountain car problem involves a car starting somewhere near the center of the valley in the curve below. 
 The car has the option of accelerating backwards, forwards, or not accelerating at each timestep.
