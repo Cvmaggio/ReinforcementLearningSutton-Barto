@@ -1,5 +1,16 @@
 <h1>Reinforcement Learning: An Introduction</h1>
+<h2>Short Corridor</h2>
+<p>
+This exercise is a basic introduction to policy gradients. We are keeping
+the features consntant and only depending on two theta features for the policy. These indicate the preference for taking left and right actions 
+so we can find the optimal probability of going left or right in our short corridor. We are showing that epsilon greedy left or epsilon greedy right are not the optimal probability of going left or right when our performance
+measure is the value of the first state under our theta parameterized policy.
+</p>
+<h3>REINFORCE</h3>
 <h2>Mountain Car</h2>
+<p align="center">
+    <img src="https://github.com/cvmaggio/ReinforcementLearningSutton-Barto/blob/main/figures/short_corridor/REINFORCE.png">
+</p>
 <p>
 The mountain car problem involves a car starting somewhere near the center of the valley in the curve below. 
 The car has the option of accelerating backwards, forwards, or not accelerating at each timestep.
